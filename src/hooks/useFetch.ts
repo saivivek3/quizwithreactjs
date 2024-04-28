@@ -1,4 +1,3 @@
-import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 const url = "https://restcountries.com/v3.1/all";

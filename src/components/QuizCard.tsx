@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import useFetch from "../hooks/useFetch";
 import Loading from "./Loading";
 import Error from "./Error";
@@ -6,7 +6,6 @@ import { generateQuestionAndAnswer } from "../utils/generateQuestionAndAnswers";
 
 import RightIcon from "../assets/Check_round_fill.svg";
 import WrongIcon from "../assets/Close_round_fill.svg";
-import CongrajulationScreen from "./CongragulationScreen";
 import Layout from "../layout/Layout";
 import CongragulationScreen from "./CongragulationScreen";
 import { supabase } from "../createClient";

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Layout from "../layout/Layout";
 import CongratsIcon from "../assets/congrats.svg";
 import { supabase } from "../createClient";
@@ -14,8 +14,6 @@ function CongragulationScreen({ score, setQuizIndex }: any) {
   useEffect(() => {
     getQuizScore();
   }, []);
-
-  console.log(quizScoreData, "quizscoredata");
 
   return (
     <Layout maxWidth="max-w-lg" padding="p-11">
