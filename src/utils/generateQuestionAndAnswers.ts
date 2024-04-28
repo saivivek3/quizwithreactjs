@@ -1,5 +1,5 @@
 function generateRandomOptions(options: any) {
-  return options.sort(function (a: any, b: any) {
+  return options.sort(function () {
     return Math.random() - 0.5;
   });
 }
