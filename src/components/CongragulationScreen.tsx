@@ -3,7 +3,7 @@ import Layout from "../layout/Layout";
 import CongratsIcon from "../assets/congrats.svg";
 import { supabase } from "../createClient";
 
-function CongragulationScreen({ score, setQuizIndex }: any) {
+function CongragulationScreen({ score, setQuizIndex, setScore }: any) {
   const [quizScoreData, setQuizScoreData] = useState<any>([]);
 
   async function getQuizScore() {
@@ -28,7 +28,10 @@ function CongragulationScreen({ score, setQuizIndex }: any) {
         </p>
         <button
           className="bg-gradient-to-r from-pink-500 to-purple-500 px-14 py-6 rounded-lg  font-medium text-xl text-[#E2E4F3]"
-          onClick={() => setQuizIndex(0)}
+          onClick={() => {
+            setQuizIndex(0);
+            setScore(0);
+          }}
         >
           Play Again
         </button>
