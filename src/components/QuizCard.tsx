@@ -30,7 +30,6 @@ function QuizCard() {
   }, [havingCapitalDataUpdatdArr]);
 
   useEffect(() => {
-    console.log("2nd useffect was called");
     if (havingCapitalDataUpdatdArr.length > 0)
       setQuizData(
         generateQuestionAndAnswer(
@@ -53,7 +52,7 @@ function QuizCard() {
   }, [selectedIndex]);
 
   useEffect(() => {
-    if (quizIndex === 9) postData();
+    if (quizIndex === 10) postData();
   }, [quizIndex]);
 
   if (loading) return <Loading />;
